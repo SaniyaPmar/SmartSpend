@@ -26,7 +26,7 @@ public class SmartSpend extends javax.swing.JFrame {
             category.removeAllItems();
             ResultSet rs=db.DbConnect.st.executeQuery("select * from category_info");
             while(rs.next()){
-                category.addItem(rs.getString("category"));
+      category.addItem(rs.getString("category"));
                 
             }
         }catch(Exception ex){
@@ -352,7 +352,8 @@ public class SmartSpend extends javax.swing.JFrame {
 
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-       new Category().setVisible(true);
+       setVisible(false);
+        new Category().setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
@@ -386,7 +387,8 @@ public class SmartSpend extends javax.swing.JFrame {
     }//GEN-LAST:event_aKeyTyped
 
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
-        new ViewSpending().setVisible(true);
+        setVisible(false);
+        new ViewSpendingpie().setVisible(true);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
@@ -407,6 +409,7 @@ public class SmartSpend extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
+       setVisible(false);
         new Category().setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
@@ -415,7 +418,7 @@ public class SmartSpend extends javax.swing.JFrame {
     }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
-        JOptionPane.showMessageDialog(null, "DESIGNED AND DEVELOPED BY G4 ");
+         JOptionPane.showMessageDialog(null, "DESIGNED AND DEVELOPED BY G4 ");
     }//GEN-LAST:event_jMenuItem4ActionPerformed
 
     /**
